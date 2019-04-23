@@ -1,1 +1,1 @@
-# CareersInLIS-Metadata
+# Careers in Library and Information Science - Metadata Workshop
