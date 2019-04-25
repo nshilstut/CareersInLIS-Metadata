@@ -14,4 +14,11 @@ This 90 minute workshop is part of the Careers in LIS week-long exploration (ins
 ## Workshop Requirements
 ### OpenRefine
 
-OpenRefine is a tool that provides a graphical-interface for cleaning, transforming, and enriching imported metadata. Openrefine and some extra reconciliation services will be pre-installed on campus computers for use during the workshop. If you would like to install the software on your personal laptop, you may follow the instructions here. 
+OpenRefine is a tool that provides a graphical-interface for cleaning, transforming, and enriching imported metadata. OpenRefine and some extra reconciliation services will be pre-installed on campus computers for use during the workshop. If you would like to install the software on your personal laptop, you may follow the instructions [here](https://github.com/nshilstut/CareersInLIS-Metadata/tree/master/installation). 
+
+#### OpenRefine Install Test
+
+Upon launch, OpenRefine will run as a local server, opening your computer's browser. As long as OpenRefine is running, you can point your browser at http://127.0.0.1:3333/ to use it, even in several browser tabs/windows.
+
+## Credits and License
+Parts of this workshop are borrowed from the DLF Metadata Analysis Workshop held during the 2018 DLF Forum and available [here](https://github.com/DLFMetadataAssessment/2018MetadataAnalysisWorkshop). All instructional materials are being made available under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). Feel free to reuse these materials according to these license terms.
