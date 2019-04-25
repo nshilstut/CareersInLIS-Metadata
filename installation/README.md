@@ -32,7 +32,7 @@ Extensions installed in the `workspace` directory are available to any version o
 
 # Installing the RDF Extension for OpenRefine
 
-1. Download the latest release of the RDF extension from [here](https://github.com/stkenny/grefine-rdf-extension/releases)
+1. Download the latest release of the RDF extension from [here](https://github.com/stkenny/grefine-rdf-extension/releases).
 2. Unzip the extension into the `extensions` directory (this should create a sub-directory within the extensions directory which holds all of the files for the extension)
 3. Start (or restart) OpenRefine
 4. You will see the RDF extension in the drop down menu in the top right corner. 
