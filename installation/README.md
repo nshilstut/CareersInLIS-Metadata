@@ -16,7 +16,7 @@ Upon launch, OpenRefine will run as a local server, opening your computer's brow
 
 # Installing Extensions for OpenRefine
 
-> **This information is copied from https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions**
+> **Some of this information is copied from https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions**
 
 Extensions can be installed in two locations. Either in the OpenRefine `workspace` directory (where all the OpenRefine project files are stored) or in the directory in which you have installed OpenRefine itself. In both cases extensions are installed by copying files into a directory called "extensions".
 
@@ -30,11 +30,13 @@ Extensions installed in the `workspace` directory are available to any version o
     - For Linux, by default the workspace directory will be at `~/.local/share/openrefine/`
     - For Mac, by default the workspace directory will be at `~/Library/Application Support/OpenRefine`
 
-**To install an extension:**
+# Installing the RDF Extension for OpenRefine
 
-1. Download the extension (usually as a Zip file)
+1. Download the latest release of the RDF extension from [here](https://github.com/stkenny/grefine-rdf-extension/releases)
 2. Unzip the extension into the `extensions` directory (this should create a sub-directory within the extensions directory which holds all of the files for the extension)
 3. Start (or restart) OpenRefine
+4. You will see the RDF extension in the drop down menu in the top right corner. 
+![rdf-extension.PNG](/images/rdf-extension.PNG)
 
 **Note:** Some extensions are more visible than others upon installation. Read the extensions documentation to see how to use it and how it appears in the OpenRefine interface (e.g. if the extension is supposed to appear in the upper right of your working window next to the "Extensions:" label, or if it works through the use of drop-downs or added functions within GREL).
 
