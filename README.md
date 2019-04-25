@@ -8,7 +8,7 @@ This 90 minute workshop is part of the Careers in LIS week-long exploration (ins
 | Time | Activity | Material |
 | ----- | ----- | ----- |
 | 9:00 - 9:25 am | Presentation | Slides |
-| 9:25 - 9:50 am | OpenRefine - Cleaning Data | Instructions |
+| 9:25 - 9:50 am | OpenRefine - Importing and Cleaning Data | Instructions |
 | 9:50 - 10:15 am | OpenRefine - Validating and Exporting Data | Instructions |
 | 10:15 - 10:30 am | Discussion |
 
