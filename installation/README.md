@@ -41,3 +41,15 @@ Extensions installed in the `workspace` directory are available to any version o
 **Note:** Some extensions are more visible than others upon installation. Read the extensions documentation to see how to use it and how it appears in the OpenRefine interface (e.g. if the extension is supposed to appear in the upper right of your working window next to the "Extensions:" label, or if it works through the use of drop-downs or added functions within GREL).
 
 **Note:** Not all extensions are compatible with all versions of OpenRefine. Check the extension documentation and ask the developers of the extension or the OpenRefine community for information about compatibility.
+
+# Adding the LCSH Reconciliation Service
+
+Once you have successfully installed the RDF extension, you are ready to add the LCSH Reconciliation Service. Click the RDF button in the dropdown menu in the top right corner, select Add reconciliation service, Based on SPARQL endpoint. In the dialog, you tell OpenRefine how to access the controlled vocabulary. Provide the following parameters:
+
+| Name| LCSH |
+| Endpoint URL | http://sparql.freeyourmetadata.org/ |
+| Graph URI | http://id.loc.gov/authorities/subjects |
+| Type | Virtuoso |
+| Label properties | check only `skos:prefLabel`|
+
+This instructs OpenRefine to create an LCSH reconciliation service that reads the vocabulary identified by http://id.loc.gov/authorities/subjects from our endpoint. The vocabulary is loaded in Virtuoso (a database type) and uses SKOS for labels.
