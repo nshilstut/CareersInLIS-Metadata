@@ -44,7 +44,7 @@ Extensions installed in the `workspace` directory are available to any version o
 
 # Adding the LCSH Reconciliation Service
 
-Once you have successfully installed the RDF extension, you are ready to add the LCSH Reconciliation Service. Click the RDF button in the dropdown menu in the top right corner, select Add reconciliation service, Based on SPARQL endpoint. In the dialog, you tell OpenRefine how to access the controlled vocabulary. Provide the following parameters:
+Once you have successfully installed the RDF extension, you are ready to add the LCSH Reconciliation Service. Click the RDF button in the dropdown menu in the top right corner, select "Add reconciliation service," "Based on SPARQL endpoint." In the dialog, you tell OpenRefine how to access the controlled vocabulary. Provide the following parameters:
 
 **Name**: LCSH<br>
 **Endpoint URL**: http://sparql.freeyourmetadata.org/<br>
@@ -52,4 +52,4 @@ Once you have successfully installed the RDF extension, you are ready to add the
 **Type**: Virtuoso<br>
 **Label properties**: check only `skos:prefLabel`
 
-This instructs OpenRefine to create an LCSH reconciliation service that reads the vocabulary identified by http://id.loc.gov/authorities/subjects from our endpoint. The vocabulary is loaded in Virtuoso (a database type) and uses SKOS for labels.
+This instructs OpenRefine to create an LCSH reconciliation service that reads the vocabulary identified by http://id.loc.gov/authorities/subjects from the endpoint. The vocabulary is loaded in Virtuoso (a database type) and uses SKOS for labels.
