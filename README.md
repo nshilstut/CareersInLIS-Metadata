@@ -15,7 +15,7 @@ This 90 minute workshop is part of the Careers in LIS week-long exploration (ins
 ## Workshop Requirements
 ### OpenRefine
 
-OpenRefine is a tool that provides a graphical-interface for cleaning, transforming, and enriching imported metadata. OpenRefine and the RDF extension will be pre-installed on campus computers for use during the workshop. If you would like to install the software and extension on your personal laptop, you may follow the instructions [here](/installation). 
+OpenRefine is a powerful tool that provides a graphical-interface for working with messy data, including tools for cleaning and enriching imported data; transforming data from one format into another; extending with web services; and connecting to external data. OpenRefine and the RDF extension will be pre-installed on campus computers for use during the workshop. If you would like to install the software and extension on your personal laptop, you may follow the instructions [here](/installation). 
 
 ### RDF Extension for OpenRefine
 
