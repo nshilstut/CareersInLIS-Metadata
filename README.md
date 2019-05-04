@@ -7,10 +7,10 @@ This 90 minute workshop is part of the Careers in LIS week-long exploration (ins
 ## Workshop Schedule
 | Time | Activity | Material |
 | ----- | ----- | ----- |
-| 9:00 - 9:25 am | Presentation |[Slides](http://bit.ly/2J7TWUk) |
-| 9:25 - 9:50 am | OpenRefine - Importing and Cleaning Data | [Instructions](instructions/importing-and-cleaning.md) |
-| 9:50 - 10:15 am | OpenRefine - Validating and Exporting Data | [Instructions](instructions/validating-and-exporting.md) |
-| 10:15 - 10:30 am | Discussion |
+| 9:00 - 9:20 am | Presentation |[Slides](http://bit.ly/2J7TWUk) |
+| 9:20 - 9:40 am | OpenRefine - Importing and Cleaning Data | [Instructions](instructions/importing-and-cleaning.md) |
+| 9:40 - 10:00 am | OpenRefine - Validating and Exporting Data | [Instructions](instructions/validating-and-exporting.md) |
+| 10:00 - 10:30 am | Questions & Practice on your own |
 
 ## Workshop Requirements
 ### OpenRefine
