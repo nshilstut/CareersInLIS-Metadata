@@ -6,7 +6,7 @@
 
 ## Wikidata Reconciliation
 
-Let's try reconciling the **Place** column against [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page. 
+Let's try reconciling the **Place** column against [Wikidata](https://www.wikidata.org/wiki/). 
 
 1. Click the upside down arrow next to the column name and choose Reconcile > Start reconciling from the dropdown menu. 
 2. Choose Wikidata under Services, and select "city of the United States" under "Reconcile each cell to an entity of one of these types." 3. Select "Auto-match candidates with high confidence." 
