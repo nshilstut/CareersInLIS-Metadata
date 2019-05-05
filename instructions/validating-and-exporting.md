@@ -20,15 +20,56 @@ In situations when there are no matches and no search results, you may need to d
 
 So we're done, right? Nope. All we have right now is the standard Wikidata name form of the entity. This is good, but we still need to extract this name form to its own column, its identifier, or both.
 
-On the Place column, select Edit column > Add column based on this column. Name this column placeIDs. In the transformation window, enter your GREL: 'https://www.wikidata.org/wiki/' + cell.recon.match.id + '/' This will not only extract the identifier for the entity, but create the full Wikidata URI.
+Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in GREL, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL.
+
+On the Place column, select Edit column > Add column based on this column. Name this column placeIDs. In the transformation window, enter your GREL: 
+
+`'https://www.wikidata.org/wiki/' + cell.recon.match.id + '/'`
+
+This will not only extract the identifier for the entity, but create the full Wikidata URI.
 
 Once you have this new column, reconciliation data can be dispatched by selecting Reconcile > Actions > Clear reconciliation data.
 
-## LCSH Reconciliation
+## LCSH Reconciliation Exercise
 
-Let's try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
+Try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
 
 1. Click the upside down arrow next to the column name and choose Reconcile > Start reconciling from the dropdown menu. 
 2. Choose LCSH under Services.
 3. Select "Auto-match candidates with high confidence." 
-4. Click Start reconciling. It may take a couple of minutes to complete.
+4. Click Start reconciling.
+
+## Getting Data Out of OpenRefine
+
+When your data has been cleaned to your satisfaction, you can export it to a variety of different file formats. Be sure all text filters and facet windows are closed, and that you have joined any split multi-valued data before you export! Clicking on the **Export** button in the upper right corner of the screen will display the export file formats available. **Export Project**, on the other hand, will save a copy of your Refine project as a TAR archive that can be shared with other people and opened in other Refine installations.
+
+OpenRefine's **Templating** function allows you to export your data in a "roll your own" fashion. As OpenRefine's wiki states, "this is useful for formats that we don't support natively yet, or won't support." Currently, Templating is set up to generate a single JSON document of your data by default; with a few changes, we can set up a template to put our enriched data out to, say, an XML file. You'll need to fill out these spaces with the below template:
+
+Prefix:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+[blank line break]
+```
+
+Row template:
+```
+   <record>
+      <title>{{cells["Title"].value,"xml")}}</title>
+      <ethnicGroup>{{escape(cells["Ethnic Group"].value,"xml")}}</ethnicGroup>
+      <place>{{escape(cells["Place"].value,"xml")}}</place>
+      <placeIDs>{{escape(cells["placeIDs"].value,"xml")}}</placeIDs>
+      <date>{{escape(cells["Date"].value,"xml")}}</date> 
+   </record>
+```
+
+Row separator:
+```
+[blank line break]
+```
+
+Suffix:
+```
+[blank line break]
+</records>
+```
