@@ -9,7 +9,8 @@
 Let's try reconciling the **Place** column against [Wikidata](https://www.wikidata.org/wiki/). 
 
 1. Click the upside down arrow next to the column name and choose Reconcile > Start reconciling from the dropdown menu. 
-2. Choose Wikidata under Services, and select "city of the United States" under "Reconcile each cell to an entity of one of these types." 3. Select "Auto-match candidates with high confidence." 
+2. Choose Wikidata under Services, and select "city of the United States" under "Reconcile each cell to an entity of one of these types." 
+3. Select "Auto-match candidates with high confidence." 
 4. Click Start reconciling. It may take a couple of minutes to complete.
 
 You should see 168 values that automatched in the judgment window in the left pane. This is because the judgement score on each search had a high enough probably that the Wikidata match was correct. If we filter by the "matched" values in the judgment window, we'll see that each value is now a link that take us to the Wikidata record. 
@@ -20,7 +21,7 @@ In situations when there are no matches and no search results, you may need to d
 
 So we're done, right? Nope. All we have right now is the standard Wikidata name form of the entity. This is good, but we still need to extract this name form to its own column, its identifier, or both.
 
-Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in GREL, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL.
+Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in **GREL**, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL. Read more about GREL functions [here](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions).
 
 On the Place column, select Edit column > Add column based on this column. Name this column placeIDs. In the transformation window, enter your GREL: 
 
@@ -30,7 +31,7 @@ This will not only extract the identifier for the entity, but create the full Wi
 
 Once you have this new column, reconciliation data can be dispatched by selecting Reconcile > Actions > Clear reconciliation data.
 
-## LCSH Reconciliation Exercise
+## LCSH Reconciliation
 
 Try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
 
@@ -59,7 +60,19 @@ Row template:
       <ethnicGroup>{{escape(cells["Ethnic Group"].value,"xml")}}</ethnicGroup>
       <place>{{escape(cells["Place"].value,"xml")}}</place>
       <placeIDs>{{escape(cells["placeIDs"].value,"xml")}}</placeIDs>
-      <date>{{escape(cells["Date"].value,"xml")}}</date> 
+      <date>{{escape(cells["Date"].value,"xml")}}</date>
+      <subjects>{{escape(cells["Subjects"].value,"xml")}}</subjects>
+      <date>{{escape(cells["Date"].value,"xml")}}</date>
+      <photographerCategories>{{escape(cells["Photographer's categories"].value,"xml")}}</photographerCategories>
+      <photographerNotes>{{escape(cells["Photographer's notes"].value,"xml")}}</photographerNotes>
+      <description>{{escape(cells["Description"].value,"xml")}}</description>
+      <photographer>{{escape(cells["Photographer"].value,"xml")}}</photographer>
+      <scanNumber>{{escape(cells["Scan number"].value,"xml")}}</scanNumber>
+      <institution>{{escape(cells["Institution"].value,"xml")}}</institution>
+      <department>{{escape(cells["Department"].value,"xml")}}</department>
+      <collection>{{escape(cells["Collection"].value,"xml")}}</collection>
+      
+      
    </record>
 ```
 
