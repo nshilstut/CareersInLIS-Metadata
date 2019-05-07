@@ -1,9 +1,11 @@
 # Importing data into OpenRefine
 
-1. OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well as parse raw, unformatted data copied and pasted using the Clipboard function. For this session, we will use sample data from the TriCollege digital library, [Triptych](http://triptych.brynmawr.edu/cdm/landingpage/collection/BMC_Weddings). Go [here](/data/ethnic-wedding-photos.csv), right click on **ethnic-wedding-photos.csv**, and click save as CSV.
-2. Launch OpenRefine by clicking the shortcut to the application file `openrefine.exe`, saved on your desktop. This will launch the program in a browser window. From OpenRefine's start screen, select Create Project > Get data from > This Computer > Choose files, then click Next to upload the CSV file you just downloaded.
-3. You should now see a parsing window, which previews what your data will look like in the main interface. OpenRefine has automatically skipped the first row of data and parsed them to column headers. OpenRefine does not choose a default character encoding, so make sure you set it to UTF-8.
-4. Click Create Project.
+OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well as parse raw, unformatted data copied and pasted using the Clipboard function. For this session, we will use sample data from the TriCollege digital library, [Triptych](http://triptych.brynmawr.edu/cdm/landingpage/collection/BMC_Weddings). 
+
+1. Go [here](/data/ethnic-wedding-photos.csv) and click **View raw**, then right click anywhere on the page, choose **Save as**, and add the extension **.csv** to the file name.
+2. Launch OpenRefine by clicking the shortcut to the application file `openrefine.exe`, saved on your desktop. This will launch the program in a browser window. From OpenRefine's start screen, select **Create Project > Get data from > This Computer > Choose files**, then click **Next** to upload the CSV file you just downloaded.
+3. You should now see a parsing window, which previews what your data will look like in the main interface. OpenRefine has automatically skipped the first row of data and parsed them to column headers. OpenRefine does not choose a default character encoding, so make sure you set it to **UTF-8.**
+4. Click **Create Project**.
 
 # Assessing and cleaning data
 
@@ -12,10 +14,10 @@
 When tabular data contains multiple values per field, OpenRefine can easily break them apart and put them back together later when data transformation is complete. Lets try this on the **Subjects** column.
 
 1. Click the upside down triangle next to the Subjects column. 
-2. Select Edit Cells > Split Multi-Valued Cells in the dropdown menu.
+2. Select **Edit Cells > Split Multi-Valued Cells** in the dropdown menu.
 3. Enter " | " (space pipe space) as the delimeter.
 
-When we're done, we can rejoin this split data by selecting Edit Cells > Join Multi-Valued Cells.
+When we're done, we can rejoin this split data by selecting **Edit Cells > Join Multi-Valued Cells**.
 
 ## Faceting
 
@@ -29,22 +31,22 @@ Facets allow you to take a macro-level look at a large amount of data by countin
 Now that we've split the values in the **Subjects** column, let's create facets.
 
 1. Click the upside down triangle next to the column name.
-2. Select Facet > Text facet. A list of values and the number of times they occur appears in the left panel.
+2. Select **Facet > Text facet**. A list of values and the number of times they occur appears in the left panel.
 3. Clicking on any of the entries in the facet list will change the interface to include only the record(s) featuring that facet entry. 
-4. If you move your mouse pointer over an entry in the facet window, you can select multiple facet entries using the Include popup next to each entry. You can also select Invert at the top of the facet window to automatically select the opposite of the values you chose.
-5. If you move your mouse pointer over an entry in the facet window, you'll also see the option to Edit the term comes up. By changing the text in the edit box and clicking Apply, you will automatically change all instances in the data at once.
-6. There are some values sorting at the top because they have a leading whitespace. We can remove them by clicking the dropdown menu and choosing Edit Cells > Common transformations > Trim leading and trailing whitespace.
+4. If you move your mouse pointer over an entry in the facet window, you can select multiple facet entries using the **Include** popup next to each entry. You can also select **Invert** at the top of the facet window to automatically select the opposite of the values you chose.
+5. If you move your mouse pointer over an entry in the facet window, you'll also see the option to Edit the term comes up. By changing the text in the edit box and clicking **Apply**, you will automatically change all instances in the data at once.
+6. There are some values sorting at the top because they have a leading whitespace. We can remove them by clicking the dropdown menu and choosing **Edit Cells > Common transformations > Trim leading and trailing whitespace**.
 
 ## Filtering
 
-You can also apply Text Filters which look for a particular piece of text appearing in a column. 
+You can also apply text filters which look for a particular piece of text appearing in a column. 
 
-1. Click the drop down menu at the top of the Subjects column and choose Text filter. In the facet area, a filter box will appear. 
+1. Click the drop down menu at the top of the Subjects column and choose **Text filter**. In the facet area, a filter box will appear. 
 2. Try typing "wedding" to display only rows which contain that text.
 
 ## Clustering
 
 Clustering is OpenRefine's method of algorithmically comparing a column's data against itself to look for inconsistencies. It uses two methods (Key Collision and Nearest Neighbor) with different functions to look for potential data inconsistencies.
 
-1. On the Subjects facet window, close all filters or individual data selections, and click the Clustering button at the top right corner.
-2. The Clusters from our dataset are capitalization inconsistencies. For each, you have the option of merging the values together or replacing inconsistencies with a single, consistent value. By default OpenRefine uses the most common value in the cluster as the new value, but you can select one of the other values by clicking the value itself, or you can simply type the desired value into the New Cell Value box.
+1. On the Subjects facet window, close all filters or individual data selections, and click the **Clustering** button at the top right corner.
+2. The Clusters from our dataset are capitalization inconsistencies. For each, you have the option of merging the values together or replacing inconsistencies with a single, consistent value. By default, OpenRefine uses the most common value in the cluster as the new value, but you can select one of the other values by clicking the value itself, or you can simply type the desired value into the **New Cell Value** box.
