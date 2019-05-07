@@ -52,7 +52,7 @@ Prefix:
 <records>
 [blank line break]
 ```
-Row template:
+**Row template:**
 ```
     <record>
         <title>{{escape(cells["Title"].value,"xml")}}</title>
@@ -77,11 +77,11 @@ Row template:
         <referenceURL>{{escape(cells["Reference URL"].value,"xml")}}</referenceURL>
    </record>
 ```
-Row separator:
+**Row separator:**
 ```
 [blank line break]
 ```
-Suffix:
+**Suffix:**
 ```
 [blank line break]
 </records>
