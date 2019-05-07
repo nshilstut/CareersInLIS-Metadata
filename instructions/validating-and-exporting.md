@@ -8,14 +8,14 @@
 
 Let's try reconciling the **Place** column against [Wikidata](https://www.wikidata.org/wiki/). 
 
-1. Click the upside down arrow next to the column name and choose Reconcile > Start reconciling from the dropdown menu. 
-2. Choose Wikidata under Services, and select "city of the United States" under "Reconcile each cell to an entity of one of these types." 
-3. Select "Auto-match candidates with high confidence." 
-4. Click Start reconciling. It may take a couple of minutes to complete.
+1. Click the upside down arrow next to the column name and choose **Reconcile > Start reconciling** from the dropdown menu. 
+2. Choose **Wikidata** under "Services," and select **city of the United States** under "Reconcile each cell to an entity of one of these types."
+3. Select **Auto-match candidates with high confidence**.
+4. Click **Start reconciling**. It may take a couple of minutes to complete.
 
-You should see 168 values that automatched in the judgment window in the left pane. This is because the judgement score on each search had a high enough probably that the Wikidata match was correct. If we filter by the "matched" values in the judgment window, we'll see that each value is now a link that take us to the Wikidata record. 
+You should see 168 values that automatched in the judgment window in the left pane. This is because the judgement score on each search had a high enough probably that the Wikidata match was correct. If we filter by the **matched** values in the judgment window, we'll see that each value is now a link that take us to the Wikidata record. 
 
-If we filter by "none" in the judgment window, we'll see the values that did not automatch along with possible matches sorted by probability of match. For "Chicago, IL" we see that "Chicago" has an 82% probability of a match, followed by "West Chicago" (73%) and "North Chicago" (70%). We can also choose to create a new item or search again for a match. If we select "Chicago" as the match, we can either match just this cell or match all identical cells.
+If we filter by **none** in the judgment window, we'll see the values that did not automatch along with possible matches sorted by probability of match. For "Chicago, IL" we see that "Chicago" has an 82% probability of a match, followed by "West Chicago" (73%) and "North Chicago" (70%). We can also choose to create a new item or search again for a match. If we select "Chicago" as the match, we can either match just this cell or match all identical cells.
 
 In situations when there are no matches and no search results, you may need to do some research to figure out a better value to use. For example, if we Google "Seal Harbor, ME" we'll find that this is a village in Mount Desert, ME. When we enter "Mount Desert, ME" we get a hit for "Mount Desert town in Maine."
 
@@ -23,22 +23,22 @@ So we're done, right? Nope. All we have right now is the standard Wikidata name 
 
 Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in **GREL**, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL. Read more about GREL functions [here](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions).
 
-On the Place column, select Edit column > Add column based on this column. Name this column placeIDs. In the transformation window, enter your GREL: 
+On the **Place** column, select **Edit column > Add column based on this column**. Name this column **placeIDs**. In the transformation window, enter your GREL: 
 
 `'https://www.wikidata.org/wiki/' + cell.recon.match.id + '/'`
 
 This will not only extract the identifier for the entity, but create the full Wikidata URI.
 
-Once you have this new column, reconciliation data can be dispatched by selecting Reconcile > Actions > Clear reconciliation data.
+Once you have this new column, reconciliation data can be dispatched by selecting **Reconcile > Actions > Clear reconciliation data**.
 
 ## LCSH Reconciliation
 
-Try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
+LCSH reconciliation requires installing the RDF extension for OpenRefine. See those instructions [here](/installation#installing-extensions-for-openrefine). Try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
 
-1. Click the upside down arrow next to the column name and choose Reconcile > Start reconciling from the dropdown menu. 
-2. Choose LCSH under Services.
-3. Select "Auto-match candidates with high confidence." 
-4. Click Start reconciling.
+1. Click the upside down arrow next to the column name and choose **Reconcile > Start reconciling** from the dropdown menu. 
+2. Choose **LCSH** under "Services."
+3. Select **Auto-match candidates with high confidence.**
+4. Click **Start reconciling**.
 
 ## Getting Data Out of OpenRefine
 
@@ -52,35 +52,35 @@ Prefix:
 <records>
 [blank line break]
 ```
-
 Row template:
 ```
-   <record>
-      <title>{{cells["Title"].value,"xml")}}</title>
-      <ethnicGroup>{{escape(cells["Ethnic Group"].value,"xml")}}</ethnicGroup>
-      <place>{{escape(cells["Place"].value,"xml")}}</place>
-      <placeIDs>{{escape(cells["placeIDs"].value,"xml")}}</placeIDs>
-      <date>{{escape(cells["Date"].value,"xml")}}</date>
-      <subjects>{{escape(cells["Subjects"].value,"xml")}}</subjects>
-      <date>{{escape(cells["Date"].value,"xml")}}</date>
-      <photographerCategories>{{escape(cells["Photographer's categories"].value,"xml")}}</photographerCategories>
-      <photographerNotes>{{escape(cells["Photographer's notes"].value,"xml")}}</photographerNotes>
-      <description>{{escape(cells["Description"].value,"xml")}}</description>
-      <photographer>{{escape(cells["Photographer"].value,"xml")}}</photographer>
-      <scanNumber>{{escape(cells["Scan number"].value,"xml")}}</scanNumber>
-      <institution>{{escape(cells["Institution"].value,"xml")}}</institution>
-      <department>{{escape(cells["Department"].value,"xml")}}</department>
-      <collection>{{escape(cells["Collection"].value,"xml")}}</collection>
-      
-      
+    <record>
+        <title>{{escape(cells["Title"].value,"xml")}}</title>
+        <ethnicGroup>{{escape(cells["Ethnic Group"].value,"xml")}}</ethnicGroup>
+        <place>{{escape(cells["Place"].value,"xml")}}</place>
+        <placeIDs>{{escape(cells["Place IDs"].value,"xml")}}</placeIDs>
+        <date>{{escape(cells["Date"].value,"xml")}}</date>
+        <subjects>{{escape(cells["Subjects"].value,"xml")}}</subjects>
+        <photographerCategories>{{escape(cells["Photographer's categories"].value,"xml")}}</photographerCategories>
+        <photographerNotes>{{escape(cells["Photographer's notes"].value,"xml")}}</photographerNotes>
+        <description>{{escape(cells["Description"].value,"xml")}}</description>
+        <photographer>{{escape(cells["Photographer"].value,"xml")}}</photographer>
+        <scanNo>{{escape(cells["Scan number"].value,"xml")}}</scanNo>
+        <institution>{{escape(cells["Institution"].value,"xml")}}</institution>
+        <department>{{escape(cells["Department"].value,"xml")}}</department>
+        <collection>{{escape(cells["Collection"].value,"xml")}}</collection>
+        <databaseInfo>{{escape(cells["Database information"].value,"xml")}}</databaseInfo>
+        <rights>{{escape(cells["Rights"].value,"xml")}}</rights>
+        <format>{{escape(cells["Format"].value,"xml")}}</format>
+        <dateCreated>{{escape(cells["Date created"].value,"xml")}}</dateCreated>
+        <dateModified>{{escape(cells["Date modified"].value,"xml")}}</dateModified>
+        <referenceURL>{{escape(cells["Reference URL"].value,"xml")}}</referenceURL>
    </record>
 ```
-
 Row separator:
 ```
 [blank line break]
 ```
-
 Suffix:
 ```
 [blank line break]
