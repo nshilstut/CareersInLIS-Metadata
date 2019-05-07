@@ -40,7 +40,7 @@ LCSH reconciliation requires installing the RDF extension for OpenRefine. See th
 3. Select **Auto-match candidates with high confidence.**
 4. Click **Start reconciling**.
 
-## Getting Data Out of OpenRefine
+# Getting Data Out of OpenRefine
 
 When your data has been cleaned to your satisfaction, you can export it to a variety of different file formats. Be sure all text filters and facet windows are closed, and that you have joined any split multi-valued data before you export! Clicking on the **Export** button in the upper right corner of the screen will display the export file formats available. **Export Project**, on the other hand, will save a copy of your Refine project as a TAR archive that can be shared with other people and opened in other Refine installations.
 
