@@ -6,7 +6,7 @@ Riley, J. (2010). Seeing Standards: A Visualization of the Metadata Universe. ht
 
 Riley, J. (2017). Understanding Metadata: What is Metadata, and What is it For? *NISO Primer*. https://www.niso.org/publications/understanding-metadata-2017
 
-# Decolonizing Cataloging and Classification
+# Decolonizing the Catalog
 
 Drabinski, E. (2013). Queering the Catalog: Queer Theory and the Politics of Correction. *The Library Quarterly: Information, Community, Policy*, 83(2), 94-111. doi:10.1086/669547
 
