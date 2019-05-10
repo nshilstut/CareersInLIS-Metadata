@@ -1,6 +1,6 @@
 # Importing data into OpenRefine
 
-If you haven't installed OpenRefine yet, follow the instructions [here](/installation/README.md).
+> If you haven't installed OpenRefine yet, follow the instructions [here](/installation/README.md).
 
 OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well as parse raw, unformatted data copied and pasted using the Clipboard function. For this session, we will use sample data from the TriCollege digital library, [Triptych](http://triptych.brynmawr.edu/cdm/landingpage/collection/BMC_Weddings). 
 
@@ -19,7 +19,7 @@ When tabular data contains multiple values per field, OpenRefine can easily brea
 
 1. Click the upside down triangle next to the Subjects column. 
 2. Select **Edit Cells > Split Multi-Valued Cells** in the dropdown menu.
-3. Enter " | " (space pipe space) as the delimeter.
+3. Enter " | " (space pipe space, without quotations) as the delimeter.
 
 When we're done, we can rejoin this split data by selecting **Edit Cells > Join Multi-Valued Cells**.
 
@@ -42,13 +42,13 @@ Now that we've split the values in the **Subjects** column, let's create facets.
 3. Clicking on any of the entries in the facet list will change the interface to include only the record(s) featuring that facet entry. You can click **reset** to go back to the full list. 
 4. If you move your mouse pointer over an entry in the facet window, you can select multiple facet entries using the **include** popup next to each entry. You can also select **invert** at the top of the facet window to select the opposite of the values you chose.
 5. If you move your mouse pointer over an entry in the facet window, you'll also see the option to **edit** the term comes up. By changing the text in the edit box and clicking **Apply**, you will automatically change all instances in the data at once.
-6. You may also notice that there are some values sorting at the top because they have a leading whitespace. We can remove them by clicking the dropdown menu and choosing **Edit Cells > Common transformations > Trim leading and trailing whitespace**.
+6. You may also notice that there are some values sorting at the top because they have a leading whitespace. We can remove the extra whitespace by clicking the dropdown menu and choosing **Edit Cells > Common transformations > Trim leading and trailing whitespace**.
 
 ## Filtering
 
 You can also apply text filters which look for a particular piece of text appearing in a column. 
 
-1. Click the drop down menu at the top of the Subjects column and choose **Text filter**. In the facet area, a filter box will appear. 
+1. On the **Subjects** column, click the upside triangle again and choose **Text filter** from the dropdown menu. In the facet area, a filter box will appear. 
 2. Try typing "wedding" to display only rows which contain that text.
 
 ## Clustering
