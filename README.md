@@ -17,6 +17,8 @@ After the workshop you can take a deeper dive into these concepts by reviewing t
 ## Workshop Requirements
 ### OpenRefine
 
+![OR logo](/images/OR-logo.png)
+
 OpenRefine is a powerful tool that provides a graphical-interface for working with messy data, including tools for cleaning and enriching imported data; transforming data from one format into another; extending with web services; and connecting to external data.  **Please install the software prior to the workshop on your laptop. Follow the instructions [here](/installation).** 
 
 ## Credits and License
