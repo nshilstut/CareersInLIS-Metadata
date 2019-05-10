@@ -9,5 +9,5 @@
 ## Exercise 2
 
 - Validate the **Ethnic Groups** column against Wikidata Ethnic Groups.
-- Extract the URIs (Uniform Resource Identifiers) for each value using GREL.
+- Extract the URIs (Uniform Resource Identifiers) for each value to a new column using GREL.
 - Clear your reconciliation data.
