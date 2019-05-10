@@ -1,9 +1,11 @@
 # Importing data into OpenRefine
 
+If you haven't installed OpenRefine yet, follow the instructions [here](/installation/README.md).
+
 OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well as parse raw, unformatted data copied and pasted using the Clipboard function. For this session, we will use sample data from the TriCollege digital library, [Triptych](http://triptych.brynmawr.edu/cdm/landingpage/collection/BMC_Weddings). 
 
 1. Go [here](/data/ethnic-wedding-photos.csv) and click **View raw**, then right click anywhere on the page, choose **Save as**, and add the extension **.csv** to the file name.
-2. Launch OpenRefine by clicking the shortcut to the application file `openrefine.exe`, saved on your desktop. This will launch the program in a browser window. From OpenRefine's start screen, select **Create Project > Get data from > This Computer > Choose files**, then click **Next** to upload the CSV file you just downloaded.
+2. Launch OpenRefine by clicking the application file `openrefine.exe`. This will launch the program in a browser window. From OpenRefine's start screen, select **Create Project > Get data from > This Computer > Choose files**, then click **Next** to upload the CSV file you just downloaded.
 3. You should now see a parsing window, which previews what your data will look like in the main interface. OpenRefine has automatically skipped the first row of data and parsed them to column headers. OpenRefine does not choose a default character encoding, so make sure you set it to **UTF-8.**
 4. Click **Create Project**.
 
