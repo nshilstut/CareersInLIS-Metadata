@@ -23,6 +23,14 @@ When tabular data contains multiple values per field, OpenRefine can easily brea
 
 When we're done, we can rejoin this split data by selecting **Edit Cells > Join Multi-Valued Cells**.
 
+## Undo/Redo
+
+OpenRefine lets you undo (and redo) any number of the transformations you will enact on your imported data. Your Undo/Redo history is stored with the Project and is saved automatically as you work, so the next time you open the project, you can access your full history of transformations; this means you can always try out transformations and wipe them if needed.
+
+![Undo Redo](/images/undo-redo.PNG)
+
+The 'Undo' and 'Redo' options are accessed via the lefthand panel, which lists all the steps you have undertaken. To undo, simply click on the last step you want to preserve in the list. This will automatically wipe out all the changes made after that step. The remaining steps will continue to show as greyed out; you can reapply them by simply clicking on the last step you want to apply. However, if you undo something and then apply new transformations, the greyed out steps will disappear completely, so make sure you don't need to save any of these steps before you get back to work!
+
 ## Faceting
 
 Facets allow you to take a macro-level look at a large amount of data by counting individual pieces of column data, and listing them. Filtering allows you to select subsets of your data to act on, instead of changing entire columns. Facet information appears in the left panel of the interface. OpenRefine supports a range of facet types. These include:
