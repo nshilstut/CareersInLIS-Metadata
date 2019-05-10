@@ -82,3 +82,5 @@ Prefix:
 </records>
 ```
 Once you have pasted in this code, you can click **Export** to download your XML file.
+
+> **If there's time, try out these [Practice Exercises](/instructions/practice-exercise.md), or do them later on your own.
