@@ -23,22 +23,13 @@ So we're done, right? Nope. All we have right now is the standard Wikidata name 
 
 Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in **GREL**, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL. Read more about GREL functions [here](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions).
 
-On the **Place** column, select **Edit column > Add column based on this column**. Name this column **placeIDs**. In the transformation window, enter your GREL: 
+On the **Place** column, select **Edit column > Add column based on this column**. Name this column **placeIDs**. In the transformation window, enter this GREL: 
 
 `'https://www.wikidata.org/wiki/' + cell.recon.match.id + '/'`
 
 This will not only extract the identifier for the entity, but create the full Wikidata URI.
 
 Once you have this new column, reconciliation data can be dispatched by selecting **Reconcile > Actions > Clear reconciliation data**.
-
-## LCSH Reconciliation
-
-LCSH reconciliation requires installing the RDF extension for OpenRefine. See those instructions [here](/installation#installing-extensions-for-openrefine). Try reconciling the **Ethnic Groups** column against [LCSH](http://id.loc.gov/authorities/subjects.html). 
-
-1. Click the upside down arrow next to the column name and choose **Reconcile > Start reconciling** from the dropdown menu. 
-2. Choose **LCSH** under "Services."
-3. Select **Auto-match candidates with high confidence.**
-4. Click **Start reconciling**.
 
 # Getting Data Out of OpenRefine
 
