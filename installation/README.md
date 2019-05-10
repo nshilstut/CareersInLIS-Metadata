@@ -14,7 +14,7 @@ As of May 2019, the latest stable release of OpenRefine is version 3.1. You may 
 
 Upon launch, OpenRefine will run as a local server, opening your computer's browser. A terminal window will also pop up, which looks like this:
 
-![OR-terminal-window.PNG]
+![OpenRefineTerminalWindow](/images/OR-terminal-window.PNG)
 
 **Do not close the terminal window!**
 
