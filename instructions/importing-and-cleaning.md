@@ -67,3 +67,5 @@ Clustering is OpenRefine's method of algorithmically comparing a column's data a
 2. The Clusters from our dataset are mostly capitalization inconsistencies. For each, you have the option of merging the values together or replacing inconsistencies with a single, consistent value. By default, OpenRefine uses the most common value in the cluster as the new value, but you can select one of the other values by clicking the value itself, or you can simply type the desired value into the **New Cell Value** box.
 
 ![Clustering](/images/clustering.PNG)
+
+> In the next section we will try out [validating and exporting our data](/instructions/validating-and-exporting.md). 
