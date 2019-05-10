@@ -68,4 +68,5 @@ Clustering is OpenRefine's method of algorithmically comparing a column's data a
 
 ![Clustering](/images/clustering.PNG)
 
-> **In the next section we will try out [validating and exporting our data](/instructions/validating-and-exporting.md)** 
+> **Questions?**
+> **In the next section we will try out [validating and exporting our data](/instructions/validating-and-exporting.md).** 
