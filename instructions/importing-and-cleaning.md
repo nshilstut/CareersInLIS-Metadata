@@ -9,7 +9,7 @@ OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well a
 3. You should now see a parsing window, which previews what your data will look like in the main interface. OpenRefine has automatically skipped the first row of data and parsed them to column headers. OpenRefine does not choose a default character encoding, so make sure you set it to **UTF-8.**
 4. Click **Create Project**.
 
-![OR Preview](/images/OR-preview.PNG)
+![OR Preview](/images/OR-preview-window.png)
 
 # Assessing and cleaning data
 
