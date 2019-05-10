@@ -8,9 +8,9 @@ Riley, J. (2017). Understanding Metadata: What is Metadata, and What is it For? 
 
 # Decolonizing the Catalog
 
-Drabinski, E. (2013). Queering the Catalog: Queer Theory and the Politics of Correction. *The Library Quarterly: Information, Community, Policy*, 83(2), 94-111. https://www.journals.uchicago.edu/doi/full/10.1086/669547
-
 The Cataloging Lab: http://cataloginglab.org/
+
+Drabinski, E. (2013). Queering the Catalog: Queer Theory and the Politics of Correction. *The Library Quarterly: Information, Community, Policy*, 83(2), 94-111. https://www.journals.uchicago.edu/doi/full/10.1086/669547
 
 Knowlton, S. (2005). Three Decades since Prejudices and Antipathies: A Study of Changes in the Library of Congress Subject Headings. *Cataloging and Classification Quarterly, 40, 2*, 123-45. https://scholar.princeton.edu/steven.a.knowlton/publications/three-decades-prejudices-and-antipathies-study-changes-library 
 
