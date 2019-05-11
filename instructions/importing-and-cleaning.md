@@ -1,6 +1,6 @@
 # Importing data into OpenRefine
 
-> If you haven't installed OpenRefine yet, follow the instructions [here](/installation/README.md).
+> **If you haven't installed OpenRefine yet, follow the instructions [here](/installation/README.md)**.
 
 OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well as parse raw, unformatted data copied and pasted using the Clipboard function. For this session, we will use sample data from the TriCollege digital library, [Triptych](http://triptych.brynmawr.edu/cdm/landingpage/collection/BMC_Weddings). 
 
@@ -10,6 +10,14 @@ OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well a
 4. Click **Create Project**.
 
 ![OR Preview](/images/OR-preview-window.png)
+
+## Layout of OpenRefine
+
+OpenRefine displays data in a tabular format, like a spreadsheet, where data lives in the cells at the instersection of a row and a column. 
+
+OpenRefine only displays a limited number of rows of data at one time. You can adjust the number choosing between 5, 10 (the default), 25, and 50 at the top left of the table of data. You can navigate through the records by using the previous/next/first/last navigation options at the top right of the table of data.
+
+OpenRefine has two modes of viewing data: **Rows** and **Records**. Rows is used by default. In this mode, each row represents a single record in the data set. In Records mode, OpenRefine can link together multiple rows as belonging to the same record.
 
 # Assessing and cleaning data
 
