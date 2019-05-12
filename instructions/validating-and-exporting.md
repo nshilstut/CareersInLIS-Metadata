@@ -27,7 +27,7 @@ Transformations in OpenRefine are ways of manipulating data in columns beyond fa
 
 On the **Place** column, select **Edit column > Add column based on this column**. Name this column **placeIDs**. In the transformation window, enter this GREL: 
 
-`'https://www.wikidata.org/wiki/' + cell.recon.match.id + '/'`
+`'https://www.wikidata.org/wiki/' + cell.recon.match.id'`
 
 This will not only extract the identifier for the entity, but create the full Wikidata URI.
 
