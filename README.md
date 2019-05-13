@@ -2,7 +2,7 @@
 
 ## About the Workshop
 
-This 90 minute workshop is part of the Careers in LIS week-long exploration (insert link here) held at Bryn Mawr College in May 2019. It is designed to be an introduction to the field of metadata librarianship. Participants will gain a basic understanding of what metadata is; what a metadata librarian does; and some of the major challenges and considerations surrounding metadata creation and use. The majority of time will be devoted to a hands-on training in basic cleaning and validation of metadata using [OpenRefine](http://openrefine.org/).
+This 90 minute workshop is part of the [Careers in Library and Information Science week-long exploration](https://cilis.swarthmore.edu/) held at Bryn Mawr College in May 2019. It is designed to be an introduction to the field of metadata librarianship. Participants will gain a basic understanding of what metadata is; what a metadata librarian does; and some of the major challenges and considerations surrounding metadata creation and use. The majority of time will be devoted to a hands-on training in basic cleaning and validation of metadata using [OpenRefine](http://openrefine.org/).
 
 After the workshop you can take a deeper dive into these concepts by reviewing the resources provided [here](/further-reading/further-reading.md).
 
