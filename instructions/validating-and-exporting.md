@@ -23,7 +23,7 @@ In situations when there are no matches and no search results, you may need to d
 
 Once we are done validating all of our unmatched values against Wikidata values, we should extract the [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (Uniform Resource Identifiers) for each value. We will do this using GREL.
 
-Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominately written in **GREL**, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL. Read more about GREL functions [here](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions).
+Transformations in OpenRefine are ways of manipulating data in columns beyond facets and filters. Transformations are predominantly written in **GREL**, or General Refine Expression Language. If you are familiar with Python commands or Excel formulas, you may see a number of similarities in GREL. Read more about GREL functions [here](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions).
 
 On the **Place** column, select **Edit column > Add column based on this column**. Name this column **placeIDs**. In the transformation window, enter this GREL: 
 
