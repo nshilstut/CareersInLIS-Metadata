@@ -27,7 +27,7 @@ When tabular data contains multiple values per field, OpenRefine can easily brea
 
 1. Click the upside down triangle next to the Subjects column. 
 2. Select **Edit Cells > Split Multi-Valued Cells** in the dropdown menu.
-3. Enter " | " (space pipe space, without quotations) as the delimeter.
+3. Enter " | " (space pipe space, without quotations) as the delimiter.
 
 When we're done, we can rejoin this split data by selecting **Edit Cells > Join Multi-Valued Cells**.
 
