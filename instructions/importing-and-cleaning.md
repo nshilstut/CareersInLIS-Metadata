@@ -13,7 +13,7 @@ OpenRefine can import TSV, CSV, Excel, JSON, and Google Data documents as well a
 
 ## Layout of OpenRefine
 
-OpenRefine displays data in a tabular format, like a spreadsheet, where data lives in the cells at the instersection of a row and a column. 
+OpenRefine displays data in a tabular format, like a spreadsheet, where data lives in the cells at the intersection of a row and a column. 
 
 OpenRefine only displays a limited number of rows of data at one time. You can adjust the number choosing between 5, 10 (the default), 25, and 50 at the top left of the table of data. You can navigate through the records by using the previous/next/first/last navigation options at the top right of the table of data.
 
