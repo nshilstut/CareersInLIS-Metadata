@@ -6,7 +6,7 @@ As of May 2019, the latest stable release of OpenRefine is version 3.1. You may 
 
 | Platform | Installation Instructions |
 ---------|---------------------------|
-| Windows  | Download the ZIP package, unzip, and double-click `openrefine.exe` to start. |
+| Windows  | Download the ZIP package, unzip, extract the files to a location on your PC (i.e. `C:\Users\somebody\Downloads\openrefine-3.1`), and double-click `openrefine.exe` to start. |
 | Mac OS X | Download the DMG package, open, drag the application icon into the Applications folder, and double click it to start. |
 | Linux | Download the TAR package, extract it, and run `./refine` to start. |
 
