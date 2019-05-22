@@ -9,8 +9,8 @@ After the workshop you can take a deeper dive into these concepts by reviewing t
 ## Workshop Schedule
 | Time | Activity | Material |
 | ----- | ----- | ----- |
-| 9:00 - 9:20 am | Presentation |[Slides](http://bit.ly/2J7TWUk) |
-| 9:20 - 9:40 am | OpenRefine - Importing and Cleaning Data | [Instructions](instructions/importing-and-cleaning.md) |
+| 9:00 - 9:15 am | Presentation |[Slides](http://bit.ly/2J7TWUk) |
+| 9:15 - 9:40 am | OpenRefine - Importing and Cleaning Data | [Instructions](instructions/importing-and-cleaning.md) |
 | 9:40 - 10:00 am | OpenRefine - Validating and Exporting Data | [Instructions](instructions/validating-and-exporting.md) |
 | 10:00 - 10:30 am | Questions & Practice on your own | [Practice exercise](/instructions/practice-exercise.md) |
 
